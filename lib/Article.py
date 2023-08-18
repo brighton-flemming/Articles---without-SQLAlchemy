@@ -25,8 +25,11 @@ article1 = Article("author1", magazine1, "Introduction to ORM")
 article2 = Article("author1", magazine2, "Advances in AI")
 article3 = Article("author2", magazine3, "Exploring Quantum Computing")
 
-print("Article 1's title:", article1())
+print("Article 2's title:", article2())
+print("Article 1's author:", article1.author().name())
+print("Article 3's author:", article3.author().name())
 
 all_articles = Article.all()
 for article in all_articles:
     print("Article:", article.title(), "-Author:", article._author(), "-Magazine:", article._magazine())
+

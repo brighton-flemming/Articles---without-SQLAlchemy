@@ -23,12 +23,14 @@ class Magazine:
     def add_article(self, author ):
         self.authors.append(author)
 
-magazine1 = Magazine("Tech Magazine", "Technology")
-magazine2 = Magazine("Science Journal", "Science")
-magazine3 = Magazine("Fashion Weekly", "Fashion")
+magazine1 = Magazine(1, "Tech Magazine", "Technology")
+magazine2 = Magazine(2, "Science Journal", "Science")
+magazine3 = Magazine(3, "Fashion Weekly", "Fashion")
+magazine4 = Magazine(4, "Motor Trend", "Automobile")
+
 
 print("Magazine 2's name:", magazine2.name())
-print("Magazine 2's category", magazine2.category())
+print("Magazine 2's category:", magazine2.category())
 
 all_magazines = Magazine.all()
 for magazine in all_magazines:

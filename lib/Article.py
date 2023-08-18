@@ -1,7 +1,7 @@
-from Magazine import magazine1, magazine2, magazine3
+from Magazine import magazine1, magazine2, magazine3, magazine4
 
 class Article :
-    def __init__(self, id, title, author, magazine) :
+    def __init__(self, author, id, magazine, title) :
         self.id = id
         self._title = title
         self._author = author
@@ -21,9 +21,10 @@ class Article :
         return cls._articles
     
 
-article1 = Article("author1", magazine1, "Introduction to ORM")
-article2 = Article("author1", magazine2, "Advances in AI")
-article3 = Article("author2", magazine3, "Exploring Quantum Computing")
+article1 = Article("author1", 1, magazine1, "Introduction to ORM")
+article2 = Article("author1", 2, magazine2, "Advances in AI")
+article3 = Article("author2", 3, magazine3, "Exploring Quantum Computing")
+article4 = Article("author2", 4, magazine4, "$300K 2025 Ford Mustang GTD Puts Europe's Best on Notice")
 
 print("Article 2's title:", article2())
 print("Article 1's author:", article1.author().name())

@@ -26,3 +26,10 @@ class Magazine:
 magazine1 = Magazine("Tech Magazine", "Technology")
 magazine2 = Magazine("Science Journal", "Science")
 magazine3 = Magazine("Fashion Weekly", "Fashion")
+
+print("Magazine 2's name:", magazine2.name())
+print("Magazine 2's category", magazine2.category())
+
+all_magazines = Magazine.all()
+for magazine in all_magazines:
+    print("Magazine:", magazine.name(), "-Category:", magazine.category())

@@ -8,6 +8,8 @@ class Author :
     def name(self):
         return self._name
 
-author = Author("John Doe")
+author1 = Author("John Doe")
+author2 = Author("Patrick Benjamin")
 
-print("Author's name:", author.name())
+print("Author's name:", author1.name())
+print("Author's name:", author2.name())

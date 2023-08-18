@@ -5,8 +5,7 @@ class Magazine:
        self._name = name
        self._category = category
        Magazine._magazines.append(self)
-       self.articles = []
-       self.authors = []
+ 
     
     def name(self):
         return self._name
@@ -14,14 +13,8 @@ class Magazine:
     def category(self):
         return self._category
     
-    def all(cls):
-        return cls._magazines
-
-    def add_article(self, article):
-        self.articles.append(article)
-    
-    def add_article(self, author ):
-        self.authors.append(author)
+    def all():
+        return Magazine._magazines
 
 magazine1 = Magazine(1, "Tech Magazine", "Technology")
 magazine2 = Magazine(2, "Science Journal", "Science")

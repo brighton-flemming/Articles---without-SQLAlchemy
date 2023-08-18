@@ -30,8 +30,8 @@ magazine3 = Magazine(3, "Fashion Weekly", "Fashion")
 magazine4 = Magazine(4, "Motor Trend", "Automobile")
 
 magazine1.add_contributor(author1)
-magazine2.add_contributor(author2)
-magazine3.add_contributor(author1)
+magazine2.add_contributor(author1)
+magazine3.add_contributor(author2)
 magazine4.add_contributor(author2)
 
 

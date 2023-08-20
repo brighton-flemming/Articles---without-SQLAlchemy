@@ -35,8 +35,16 @@ print("Author 1's articles:")
 for article in author1.articles():
     print("-", article.title())
 
-print("Author 1's articles:")
-for magazine in author1.magazines():
+print("Author 2's articles:")
+for magazine in author2.magazines():
+    print("-", magazine.name())
+
+print("Author 3's articles:")
+for magazine in author3.magazines():
+    print("-", magazine.name())
+
+print("Author 4's articles:")
+for magazine in author4.magazines():
     print("-", magazine.name())
 
 all_magazines = Magazine.all()

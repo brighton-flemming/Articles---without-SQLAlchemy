@@ -41,6 +41,18 @@ print("Contributors for Magazine 2: ")
 for contributor in magazine2.contributors():
     print("-", contributor.name())
 
+print("Contributors for Magazine 1: ")
+for contributor in magazine1.contributors():
+    print("-", contributor.name())
+
+print("Contributors for Magazine 3: ")
+for contributor in magazine3.contributors():
+    print("-", contributor.name())
+
+print("Contributors for Magazine 4: ")
+for contributor in magazine2.contributors():
+    print("-", contributor.name())
+
 all_articles = Article.all()
 for article in all_articles:
     print("Article:", article.title(), "-Author:", article._author(), "-Magazine:", article._magazine())

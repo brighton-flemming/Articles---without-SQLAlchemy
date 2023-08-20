@@ -1,5 +1,5 @@
 from Magazine import magazine1, magazine2, magazine3, magazine4
-from Author import author1, author2
+from Author import author1, author2, author3, author4
 
 class Article :
     _articles = []
@@ -20,14 +20,15 @@ class Article :
     def magazine(self):
         return self._magazine
     
+
     def all(cls):
         return cls._articles
     
 
 article1 = Article(author1, 1, magazine1, "Introduction to ORM")
-article2 = Article(author1, 2, magazine2, "Advances in AI")
-article3 = Article(author2, 3, magazine3, "Exploring Quantum Computing")
-article4 = Article(author2, 4, magazine4, "$300K 2025 Ford Mustang GTD Puts Europe's Best on Notice")
+article2 = Article(author2, 2, magazine2, "Advances in AI")
+article3 = Article(author3, 3, magazine3, "Exploring Quantum Computing")
+article4 = Article(author4, 4, magazine4, "$300K 2025 Ford Mustang GTD Puts Europe's Best on Notice")
 
 print("Article 2's title:", article2.title())
 print("Article 4's title:", article4.title())

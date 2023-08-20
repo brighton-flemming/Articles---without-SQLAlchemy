@@ -32,6 +32,9 @@ class Author :
 
 author1 = Author(1, "Phelix Dobberman")
 author2 = Author(2, "Patrick Benjamin")
+author3 = Author(2, "Patrick Benjamin")
+author4 = Author(2, "Patrick Benjamin")
+
 
 
 # article1 = Article("author1", magazine1, "Introduction to ORM")
@@ -56,3 +59,5 @@ author2 = Author(2, "Patrick Benjamin")
 
 print("Author's name:", author1.name())
 print("Author's name:", author2.name())
+print("Author's name:", author3.name())
+print("Author's name:", author4.name())

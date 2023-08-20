@@ -33,6 +33,21 @@ class Magazine:
         if magazine:
             return [article.title() for article in magazine._articles]
         return []
+    
+    def contributing_authors(self):
+      author_count = {}
+      for article in self._articles:
+          author_id = article.author().id
+          if author_id in author_count:
+              author_count[author_id] += 1
+          else:
+              author_count[author_id] = 1
+      authors = []
+      for author_id, count in author_count.items():
+          if count > 2:
+              authors.append(author_id)
+      return authors
+
 
 
     def contributors(self):

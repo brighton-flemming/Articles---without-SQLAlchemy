@@ -69,4 +69,4 @@ for contributor in magazine2.contributors():
 
 all_articles = Article.all()
 for article in all_articles:
-    print("Article:", article.title(), "-Author:", article.author(), "-Magazine:", article.magazine())
+    print("Article:", article.title(), "-Author:", article.author().name(), "-Magazine:", article.magazine().name())

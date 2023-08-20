@@ -21,13 +21,14 @@ class Magazine:
     def add_article(self, article):
         self._articles.append(article)
 
-    
+    @classmethod
     def find_by_name(cls, name):
         for magazine in cls._magazines:
             if magazine._name == name:
                return magazine
         return None
     
+    @classmethod
     def article_titles(cls, name):
         magazine = cls.find_by_name(name)
         if magazine:

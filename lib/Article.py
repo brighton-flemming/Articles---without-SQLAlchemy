@@ -32,8 +32,13 @@ article4 = Article(author4, 4, magazine4, "$300K 2025 Ford Mustang GTD Puts Euro
 
 print("Article 2's title:", article2.title())
 print("Article 4's title:", article4.title())
+print("Article 3's title:", article3.title())
+print("Article 1's title:", article1.title())
+
 print("Article 1's author:", article1.author().name())
 print("Article 3's author:", article3.author().name())
+print("Article 2's author:", article2.author().name())
+print("Article 4's author:", article4.author().name())
 
 all_articles = Article.all()
 for article in all_articles:

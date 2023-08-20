@@ -1,4 +1,3 @@
-from Author import author1, author2
 class Magazine:
     _magazines = []
     def __init__(self, id, name, category):
@@ -18,7 +17,7 @@ class Magazine:
     def add_contributor(self, author):
         self._contributors.append(author)
 
-    def contributor(self):
+    def contributors(self):
         return self._contributors
     
     def all():
@@ -29,10 +28,15 @@ magazine2 = Magazine(2, "Science Journal", "Science")
 magazine3 = Magazine(3, "Fashion Weekly", "Fashion")
 magazine4 = Magazine(4, "Motor Trend", "Automobile")
 
-magazine1.add_contributor(author1)
-magazine2.add_contributor(author1)
-magazine3.add_contributor(author2)
-magazine4.add_contributor(author2)
+# from Author import Author
+
+# author1 = Author(1, "Phelix Dobberman")
+# author2 = Author(2, "Patrick Benjamin")
+
+# magazine1.add_contributor(author1)
+# magazine2.add_contributor(author1)
+# magazine3.add_contributor(author2)
+# magazine4.add_contributor(author2)
 
 
 

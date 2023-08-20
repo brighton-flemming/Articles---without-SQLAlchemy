@@ -4,6 +4,7 @@ class Magazine:
        self.id = id
        self._name = name
        self._category = category
+       self._articles = []
        self._contributors = []
        Magazine._magazines.append(self)
  
@@ -16,6 +17,18 @@ class Magazine:
     
     def add_contributor(self, author):
         self._contributors.append(author)
+
+    def add_article(self, article):
+        self._articles.append(article)
+
+    
+    def find_by_name(cls, name):
+        for magazine in cls._magazines:
+            if magazine._name == name:
+               return magazine
+        return None
+    
+    
 
     def contributors(self):
         return self._contributors

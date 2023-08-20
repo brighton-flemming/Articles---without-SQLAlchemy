@@ -1,6 +1,5 @@
 
-# from Magazine import Magazine
-# from Article import Article
+
 class Author :
     def __init__(self, id, name) :
         self.id = id
@@ -21,13 +20,6 @@ class Author :
         for article in self._articles:
             unique_magazines.add(article.magazine())
         return list(unique_magazines)
-
-
-
-# magazine1 = Magazine(1, "Tech Magazine")
-# magazine2 = Magazine(2, "Science Journal")
-# magazine3 = Magazine(3, "Fashion Weekly", "Fashion")
-# magazine4 = Magazine(4, "Motor Trend", "Automobile")
 
 
 author1 = Author(1, "Phelix Dobberman")

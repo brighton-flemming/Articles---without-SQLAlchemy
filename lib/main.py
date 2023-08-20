@@ -1,4 +1,4 @@
-from Author import Author
+from Author import Author, author4, author3, author1, author2
 from Magazine import Magazine
 from Article import Article, article1, article2, article3, article4
 
@@ -21,15 +21,15 @@ magazine2.add_contributor(author1)
 magazine3.add_contributor(author2)
 magazine4.add_contributor(author2)
 
-article1 = Article("author1", 1, magazine1, "Introduction to ORM")
-article2 = Article("author1", 2, magazine2, "Advances in AI")
-article3 = Article("author2", 3, magazine3, "Exploring Quantum Computing")
-article4 = Article("author2", 4, magazine4, "$300K 2025 Ford Mustang GTD Puts Europe's Best on Notice")
+article1 = Article(author1, 1, magazine1, "Introduction to ORM")
+article2 = Article(author2, 2, magazine2, "Advances in AI")
+article3 = Article(author3, 3, magazine3, "Exploring Quantum Computing")
+article4 = Article(author4, 4, magazine4, "$300K 2025 Ford Mustang GTD Puts Europe's Best on Notice")
 
 author1.add_article(article1)
-author1.add_article(article4)
-author2.add_article(article2)
-author2.add_article(article3)
+author2.add_article(article4)
+author3.add_article(article2)
+author4.add_article(article3)
 
 print("Author 1's articles:")
 for article in author1.articles():

@@ -38,7 +38,14 @@ magazine4 = Magazine(4, "Motor Trend", "Automobile")
 # magazine3.add_contributor(author2)
 # magazine4.add_contributor(author2)
 
+print("Magazine 4's name:", magazine4.name())
+print("Magazine 4's category:", magazine4.category())
 
+print("Magazine 3's name:", magazine3.name())
+print("Magazine 3's category:", magazine3.category())
+
+print("Magazine 1's name:", magazine1.name())
+print("Magazine 1's category:", magazine1.category())
 
 print("Magazine 2's name:", magazine2.name())
 print("Magazine 2's category:", magazine2.category())

@@ -28,15 +28,7 @@ magazine2 = Magazine(2, "Science Journal", "Science")
 magazine3 = Magazine(3, "Fashion Weekly", "Fashion")
 magazine4 = Magazine(4, "Motor Trend", "Automobile")
 
-# from Author import Author
 
-# author1 = Author(1, "Phelix Dobberman")
-# author2 = Author(2, "Patrick Benjamin")
-
-# magazine1.add_contributor(author1)
-# magazine2.add_contributor(author1)
-# magazine3.add_contributor(author2)
-# magazine4.add_contributor(author2)
 
 print("Magazine 4's name:", magazine4.name())
 print("Magazine 4's category:", magazine4.category())

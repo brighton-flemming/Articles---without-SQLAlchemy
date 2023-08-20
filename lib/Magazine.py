@@ -28,7 +28,7 @@ class Magazine:
                return magazine
         return None
     
-    
+
 
     def contributors(self):
         return self._contributors
@@ -61,4 +61,8 @@ for magazine in all_magazines:
 
 print("Contributors for Magazine 2: ")
 for contributor in magazine2.contributors():
+    print("-", contributor.name())
+
+print("Contributors for Magazine 1: ")
+for contributor in magazine1.contributors():
     print("-", contributor.name())

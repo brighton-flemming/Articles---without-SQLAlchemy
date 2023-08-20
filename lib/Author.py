@@ -30,8 +30,8 @@ class Author :
 
 author1 = Author(1, "Phelix Dobberman")
 author2 = Author(2, "Patrick Benjamin")
-author3 = Author(2, "Patrick Benjamin")
-author4 = Author(2, "Patrick Benjamin")
+author3 = Author(2, "Sheldon Cooper")
+author4 = Author(2, "Fredrick Lumbard")
 
 
 print("Author's name:", author1.name())

@@ -28,6 +28,11 @@ class Magazine:
                return magazine
         return None
     
+    def article_titles(cls, name):
+        magazine = cls.find_by_name(name)
+        if magazine:
+            return [article.title() for article in magazine._articles]
+        return []
 
 
     def contributors(self):

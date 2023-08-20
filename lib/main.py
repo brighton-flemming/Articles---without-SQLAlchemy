@@ -8,6 +8,8 @@ def add_article(self, magazine, article, title):
 
 author1 = Author(1, "Phelix Dobberman")
 author2 = Author(2, "Patrick Benjamin")
+author3 = Author(2, "Patrick Benjamin")
+author4 = Author(2, "Patrick Benjamin")
 
 magazine1 = Magazine(1, "Tech Magazine", "Technology")
 magazine2 = Magazine(2, "Science Journal", "Science")

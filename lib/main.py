@@ -2,6 +2,10 @@ from Author import Author
 from Magazine import Magazine
 from Article import Article, article1, article2, article3, article4
 
+def add_article(self, magazine, article, title):
+        article = Article(self, magazine, title)
+        self._articles.append(article)
+
 author1 = Author(1, "Phelix Dobberman")
 author2 = Author(2, "Patrick Benjamin")
 

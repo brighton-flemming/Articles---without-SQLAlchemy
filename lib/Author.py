@@ -4,16 +4,22 @@ class Author :
     def __init__(self, id, name) :
         self.id = id
         self._name = name
-        self.articles = []
+        self._articles = []
 
     def add_article(self, article):
-        self.articles.append(article)
+        self._articles.append(article)
 
     def name(self):
         return self._name
     
     def articles(self):
         return self._articles
+    
+    def topic_areas(self):
+        unique_categories = set()
+        for article in self._articles:
+            unique_categories.add(article.magazine().category())
+        return list(unique_categories)
     
     def magazines(self):
         unique_magazines = set()

@@ -21,10 +21,10 @@ magazine2.add_contributor(author1)
 magazine3.add_contributor(author2)
 magazine4.add_contributor(author2)
 
-article1 = Article("author1", magazine1, "Introduction to ORM")
-article2 = Article("author1", magazine2, "Advances in AI")
-article3 = Article("author2", magazine3, "Exploring Quantum Computing")
-article4 = Article("author2", magazine4, "$300K 2025 Ford Mustang GTD Puts Europe's Best on Notice")
+article1 = Article("author1", 1, magazine1, "Introduction to ORM")
+article2 = Article("author1", 2, magazine2, "Advances in AI")
+article3 = Article("author2", 3, magazine3, "Exploring Quantum Computing")
+article4 = Article("author2", 4, magazine4, "$300K 2025 Ford Mustang GTD Puts Europe's Best on Notice")
 
 author1.add_article(article1)
 author1.add_article(article4)
@@ -69,4 +69,4 @@ for contributor in magazine2.contributors():
 
 all_articles = Article.all()
 for article in all_articles:
-    print("Article:", article.title(), "-Author:", article._author(), "-Magazine:", article._magazine())
+    print("Article:", article.title(), "-Author:", article.author(), "-Magazine:", article.magazine())

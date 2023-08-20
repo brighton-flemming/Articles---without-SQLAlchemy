@@ -20,7 +20,7 @@ class Article :
     def magazine(self):
         return self._magazine
     
-
+    @classmethod
     def all(cls):
         return cls._articles
     
@@ -37,5 +37,5 @@ print("Article 3's author:", article3.author().name())
 
 all_articles = Article.all()
 for article in all_articles:
-    print("Article:", article.title(), "-Author:", article._author(), "-Magazine:", article._magazine())
+    print("Article:", article.title(), "-Author:", article.author().name(), "-Magazine:", article.magazine().name())
 

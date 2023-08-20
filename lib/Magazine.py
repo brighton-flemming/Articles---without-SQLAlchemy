@@ -48,8 +48,6 @@ class Magazine:
               authors.append(author_id)
       return authors
 
-
-
     def contributors(self):
         return self._contributors
     
